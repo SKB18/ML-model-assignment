@@ -1,0 +1,14 @@
+Feature selection is a critical step in machine learning to identify the most relevant features that contribute to the predictive power of the model. In the given code, two feature selection techniques are applied: chi-squared test (chi2) for categorical features and SelectKBest for selecting top K features.
+
+Chi-squared test for Categorical Features:
+
+Categorical variables are encoded using methods like ordinal encoding or binary encoding to convert them into numerical representations.
+The chi2 scoring function is used to measure the dependency between categorical features and the target variable.
+The chi-squared test calculates the statistical significance of the relationship between categorical variables by comparing observed and expected frequencies.
+The SelectKBest method is used to select the top K features based on their chi-squared scores.
+SelectKBest for Selecting Top K Features:
+
+After encoding categorical variables and scaling numerical variables, the SelectKBest feature selection method is applied.
+SelectKBest is a univariate feature selection method that selects the best features based on univariate statistical tests.
+In this code, the chi2 score function is used with SelectKBest to select the top K features.
+The k parameter in SelectKBest determines the number of top features to be selected.
